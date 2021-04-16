@@ -1,0 +1,40 @@
+[
+  {
+    "id": 1,
+    "name": "iPhone 11 Pro",
+    "image": "./img/iPhone-11-Pro-Space-Gray.54a7bf04.png",
+    "category": "Smart Phones",
+    "brand": "Apple",
+    "price": 1200,
+    "description": "Apple iPhone 11 Pro Space Gray x512GB"
+  },
+  {
+    "id": 2,
+    "name": "iPhone 11 Pro",
+    "image": "./img/iPhone-11-Pro-Silver.71481b95.png",
+    "category": "Smart Phones",
+    "brand": "Apple",
+    "price": 1200,
+    "description": "Apple iPhone 11 Pro Silver x512GB"
+  },
+  {
+    "id": 3,
+    "name": "iPhone 11 Pro",
+    "color": "Gold",
+    "image": "./img/iPhone-11-Pro-Gold.66534785.png",
+    "category": "Smart Phones",
+    "brand": "Apple",
+    "price": 1200,
+    "description": "Apple iPhone 11 Pro Gold x512GB"
+  },
+  {
+    "id": 4,
+    "name": "iPhone 11 Pro",
+    "color": "Mednight Green",
+    "image": "./img/iPhone-11-Pro-MedNight-Green.514e64ed.png",
+    "category": "Smart Phones",
+    "brand": "Apple",
+    "price": 1200,
+    "description": "Apple iPhone 11 Pro Mednight Green x512GB"
+  }
+]

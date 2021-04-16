@@ -1,28 +1,43 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
+    <app-header />
+    <features-section />
+		<!-- Start Products Section -->
+		<section class="main-section products">
+			<div class="container-fluid">
+				<h2 class="h1 section-title">Products</h2>
+				<div class="products-container">
+					<products
+					v-for="product in products"
+					v-bind:key="product.id"
+					:category="product.category"
+					:image="product.image"
+					:name="product.name"
+					:description="product.description"
+					/>
+				</div>
+			</div>
+		</section>
+		<!-- End Products Section -->
   </div>
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld.vue";
-
+import AppHeader from "@/components/global/AppHeader.vue";
+import FeaturesSection from "@/components/FeaturesSection.vue";
+import Products from "@/components/Products.vue";
+import jsonAPI from "./json/products.json";
 export default {
+  data: function () {
+    return {
+      products: jsonAPI,
+    };
+  },
   name: "App",
   components: {
-    HelloWorld,
+    AppHeader,
+    FeaturesSection,
+    Products,
   },
 };
 </script>
-
-<style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
